@@ -6,9 +6,14 @@
 
     - Font weights
         Default: 400
+        Medium: 500
+        Semi-bold: 600
+        Bold: 700
 
     - Line heights
         Default: 1
+        Small: 1.05
+        Paragraph default: 1.6
 
         
         02 Colors
@@ -24,6 +29,7 @@
         05 Shadows
         
         06 Border-Radius
+        -default: 9px
         
         07 Whitespace
         - Spacing System(px)
