@@ -53,6 +53,8 @@
 }
 
 html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of users browser font size settings */
   font-size: 62.5%;
 }
 
