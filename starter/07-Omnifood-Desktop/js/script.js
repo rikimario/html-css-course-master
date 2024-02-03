@@ -38,6 +38,28 @@ allLinks.forEach(function (link) {
   });
 });
 
+// Sticky navigation
+const heroSectionEl = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(
+  function (entires) {
+    const ent = entires[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(heroSectionEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
